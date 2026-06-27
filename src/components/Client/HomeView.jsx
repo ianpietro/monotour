@@ -917,9 +917,12 @@ export default function HomeView() {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '1.5rem', color: 'var(--accent-gold)', fontWeight: '800' }}>
-              R$ 350,00 por passageiro
+              A partir de R$ 350,00 por pessoa
             </span>
-            <span style={{ fontSize: '0.8rem', color: '#D1D5DB', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            <span style={{ fontSize: '0.82rem', color: '#D1D5DB', fontStyle: 'italic', maxWidth: '600px', margin: '0 auto 4px auto' }}>
+              *Para grupos menores (de 1 a 4 pessoas), soma-se o custo fixo do transporte fluvial (lancha de R$ 300,00) dividido entre o grupo. A partir de 5 pessoas, aplica-se a tarifa base padrão de R$ 350,00/pessoa.
+            </span>
+            <span style={{ fontSize: '0.8rem', color: '#B3B9C2', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               Pix • Cartão de Crédito • PayPal • Mercado Pago
             </span>
           </div>

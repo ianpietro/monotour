@@ -270,11 +270,18 @@ export default function BookingForm({ onBookingSuccess }) {
               Resumo Financeiro
             </h3>
             
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.9rem' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--text-muted)' }}>Passeio ({formData.passengers} x R$ 350)</span>
-                <span style={{ color: 'var(--text-h)', fontWeight: '600' }}>R$ {pricing.subtotal.toFixed(2)}</span>
-              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.9rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <span style={{ color: 'var(--text-muted)' }}>Passeio ({formData.passengers} x R$ 350)</span>
+                  <span style={{ color: 'var(--text-h)', fontWeight: '600' }}>R$ {pricing.baseSubtotal.toFixed(2)}</span>
+                </div>
+                
+                {pricing.transportCost > 0 && (
+                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <span style={{ color: 'var(--text-muted)' }}>Adicional de Transporte (Grupo &lt; 5 pax)</span>
+                    <span style={{ color: 'var(--text-h)', fontWeight: '600' }}>R$ {pricing.transportCost.toFixed(2)}</span>
+                  </div>
+                )}
               
               {pricing.interpreterFee > 0 && (
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>

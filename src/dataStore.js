@@ -415,7 +415,10 @@ export const PAYMENT_METHODS = {
 export const calculateTotal = (passengers, language, paymentMethod) => {
   const basePrice = getBasePrice();
   const interpreterRate = getInterpreterRate();
-  const subtotal = passengers * basePrice;
+  
+  const transportCost = passengers < 5 ? 300 : 0;
+  const baseSubtotal = passengers * basePrice;
+  const subtotal = baseSubtotal + transportCost;
   
   // Interpreter fee if language is not Portuguese
   const interpreterFee = (language && language !== "portugues") ? interpreterRate : 0;
@@ -429,6 +432,8 @@ export const calculateTotal = (passengers, language, paymentMethod) => {
   const totalPaid = parseFloat((rawTotal + gatewayFee).toFixed(2));
   
   return {
+    baseSubtotal,
+    transportCost,
     subtotal,
     interpreterFee,
     gatewayFee: parseFloat(gatewayFee.toFixed(2)),
