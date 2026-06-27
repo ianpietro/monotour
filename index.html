@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Monotur Hub - Agência de Turismo Fluvial em Belém, Pará</title>
+    <meta name="description" content="Reserve passeios fluviais imersivos na foz do Rio Guamá e Ilha do Combu. Ecoturismo sustentável, acessibilidade em Libras e fomento à comunidade ribeirinha local." />
+    <meta name="keywords" content="turismo belem, passeio combu, rio guama, monotur belem, turismo sustentavel amazonia" />
+    <meta name="author" content="Agência Monotour" />
+    
+    <!-- Color Scheme & FOUC Prevention Script -->
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      {
+        const colorScheme = localStorage.getItem("color-scheme");
+        if (colorScheme) {
+          document.querySelector('meta[name="color-scheme"]').content = colorScheme;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
