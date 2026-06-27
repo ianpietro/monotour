@@ -62,7 +62,7 @@ export default function HomeView() {
   const faqItems = [
     {
       q: "O passeio inclui alimentação?",
-      a: "Sim! Um almoço ribeirinho completo preparado pela Dona Rosa (peixe frito, caldeirada paraense, opções vegetarianas/veganas) está 100% incluso no valor da reserva, bem como água a bordo da lancha. Só um detalhe carinhoso: as bebidas do almoço no restaurante (como sucos ou cerveja) são pagas à parte diretamente lá, combinado?"
+      a: "Sim! Um almoço ribeirinho completo preparado pela Dona Rosa (peixe frito, caldeirada paraense, opções vegetarianas/veganas) está incluso no valor, além de água fresca a bordo da lancha. Apenas as bebidas consumidas no restaurante (como sucos ou cervejas) são pagas à parte, diretamente lá."
     },
     {
       q: "Como é a segurança a bordo da embarcação?",
