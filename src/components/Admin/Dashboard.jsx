@@ -10,7 +10,9 @@ import {
   PAYMENT_METHODS,
   formatDateSafely,
   getReleaseHour,
-  saveReleaseHour
+  saveReleaseHour,
+  getIndividualPrice,
+  calculateTotal
 } from '../../dataStore';
 import { 
   DollarSign, 
@@ -68,8 +70,27 @@ export default function Dashboard({ bookings, partners, addBooking, updateBookin
     barqueiro: partners.find(p => p.id === 'barqueiro')?.payoutRate || 50
   });
 
-  // Briefing alert date state (defaults to "tomorrow", mock: 2026-06-27 or next date)
-  const [briefingAlertDate, setBriefingAlertDate] = useState('2026-06-27');
+  // Calculate total passengers booked for a specific date (only paid ones)
+  const getPassengersForDate = (dateStr) => {
+    return bookings
+      .filter(b => b.date === dateStr && b.status === 'pago')
+      .reduce((sum, b) => sum + (b.passengers || 0), 0);
+  };
+
+  // Calculate refund amount due to a client because group total got larger
+  const calculateBookingRefund = (booking) => {
+    if (booking.status !== 'pago') return 0;
+    const totalPaxDay = getPassengersForDate(booking.date);
+    const finalRate = getIndividualPrice(totalPaxDay);
+    
+    // Rate paid per person originally: subtotal / passengers
+    const originalRate = booking.subtotal / booking.passengers;
+    
+    if (originalRate > finalRate) {
+      return (originalRate - finalRate) * booking.passengers;
+    }
+    return 0;
+  };
 
   // 1. Filter bookings based on type, day, week, month, and tour selection
   const getFilteredBookings = () => {
@@ -317,23 +338,14 @@ http://localhost:5173/#/guia/${briefingSummary.date}`;
     if (!editingBooking) return;
 
     // Recalculate financial breakdown for this booking based on its edited state
-    const basePrice = getBasePrice();
-    const interpreterRate = getInterpreterRate();
-    
-    const subtotal = editingBooking.passengers * basePrice;
-    const interpreterFee = editingBooking.language !== 'portugues' ? interpreterRate : 0;
-    const rawTotal = subtotal + interpreterFee;
-    
-    const gateway = PAYMENT_METHODS[editingBooking.paymentMethod] || PAYMENT_METHODS.pix;
-    const gatewayFee = (rawTotal * (gateway.feePercent / 100)) + gateway.flatFee;
-    const totalPaid = rawTotal + gatewayFee;
+    const calc = calculateTotal(editingBooking.passengers, editingBooking.language, editingBooking.paymentMethod);
 
     const updated = {
       ...editingBooking,
-      subtotal,
-      interpreterFee,
-      gatewayFee: parseFloat(gatewayFee.toFixed(2)),
-      totalPaid: parseFloat(totalPaid.toFixed(2)),
+      subtotal: calc.subtotal,
+      interpreterFee: calc.interpreterFee,
+      gatewayFee: calc.gatewayFee,
+      totalPaid: calc.totalPaid,
       // Sync lifeJacketSizes array if passengers count changed
       lifeJacketSizes: editingBooking.lifeJacketSizes.length !== editingBooking.passengers
         ? Array(editingBooking.passengers).fill('M')
@@ -359,8 +371,7 @@ http://localhost:5173/#/guia/${briefingSummary.date}`;
     const chosenMethod = ["pix", "link", "paypal"][Math.floor(Math.random() * 3)];
     const chosenTour = TOURS[Math.floor(Math.random() * TOURS.length)].id;
 
-    const basePrice = getBasePrice();
-    const subtotal = passengersCount * basePrice;
+    const calc = calculateTotal(passengersCount, 'portugues', chosenMethod);
 
     const newMockBooking = {
       id: `MT-${Math.floor(1000 + Math.random() * 9000)}`,
@@ -373,10 +384,10 @@ http://localhost:5173/#/guia/${briefingSummary.date}`;
       paymentMethod: chosenMethod,
       status: "pago",
       tourId: chosenTour,
-      totalPaid: subtotal,
-      subtotal,
-      interpreterFee: 0,
-      gatewayFee: 0,
+      totalPaid: calc.totalPaid,
+      subtotal: calc.subtotal,
+      interpreterFee: calc.interpreterFee,
+      gatewayFee: calc.gatewayFee,
       originCity: randomLocation.city,
       originState: randomLocation.state,
       originCountry: randomLocation.country,
@@ -716,6 +727,7 @@ http://localhost:5173/#/guia/${briefingSummary.date}`;
               <th style={{ padding: '12px 10px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>CLIENTE</th>
               <th style={{ padding: '12px 10px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>VIAJANTES</th>
               <th style={{ padding: '12px 10px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>VALOR</th>
+              <th style={{ padding: '12px 10px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>REEMBOLSO</th>
               <th style={{ padding: '12px 10px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>FICHA VIAJANTE</th>
               <th style={{ padding: '12px 10px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>AÇÕES</th>
             </tr>
@@ -759,6 +771,35 @@ http://localhost:5173/#/guia/${briefingSummary.date}`;
                   <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>via {b.paymentMethod.toUpperCase()}</span>
                 </td>
                 <td style={{ padding: '14px 10px' }}>
+                  {(() => {
+                    const refund = calculateBookingRefund(b);
+                    if (refund > 0) {
+                      return (
+                        <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                          <span 
+                            className="badge badge-warning" 
+                            style={{ 
+                              background: 'rgba(255, 184, 0, 0.12)', 
+                              color: '#b28010', 
+                              border: '1px solid rgba(255, 184, 0, 0.3)',
+                              fontWeight: '700',
+                              fontSize: '0.75rem',
+                              padding: '2px 6px',
+                              borderRadius: '4px'
+                            }}
+                          >
+                            Reembolsar R$ {refund.toFixed(2)}
+                          </span>
+                          <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+                            ({getPassengersForDate(b.date)} pax total: R$ {getIndividualPrice(getPassengersForDate(b.date))}/p)
+                          </span>
+                        </div>
+                      );
+                    }
+                    return <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>-</span>;
+                  })()}
+                </td>
+                <td style={{ padding: '14px 10px' }}>
                   {b.fichaCompleted ? (
                     <span className="badge badge-success" style={{ gap: '4px' }}><Check size={12} /> Preenchida</span>
                   ) : (
@@ -787,7 +828,7 @@ http://localhost:5173/#/guia/${briefingSummary.date}`;
             ))}
             {filteredBookings.length === 0 && (
               <tr>
-                <td colSpan="8" style={{ textAlign: 'center', padding: '30px', color: 'var(--text-muted)' }}>
+                <td colSpan="9" style={{ textAlign: 'center', padding: '30px', color: 'var(--text-muted)' }}>
                   Nenhuma reserva encontrada para os filtros aplicados.
                 </td>
               </tr>
