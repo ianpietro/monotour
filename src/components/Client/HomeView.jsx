@@ -658,9 +658,17 @@ export default function HomeView() {
                 {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0, marginBottom: '8px' }}>
               "Foi uma das experiências mais maravilhosas que já vivi! Me senti acolhida, abraçada e muito bem recebida. Equipe querida, divertida e calorosa... Amei ter explorado o Combu com a Monotour. 🌹"
             </p>
+            <a 
+              href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', alignSelf: 'flex-end', marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+            >
+              Ver no Google ↗
+            </a>
           </div>
 
           {/* Review 2: Idalice Santos */}
@@ -674,9 +682,17 @@ export default function HomeView() {
                 {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0, marginBottom: '8px' }}>
               "A Monotour é muito mais que um passeio, é uma imersão cultural. Gratidão ao Leandro, à Raquel, ao Seu Ladi, à d. Nena (chocolate espetacular) e à d. Rosa (almoço maravilhoso). Valeu cada segundo!"
             </p>
+            <a 
+              href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', alignSelf: 'flex-end', marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+            >
+              Ver no Google ↗
+            </a>
           </div>
 
           {/* Review 3: Rafaella Nascimento */}
@@ -690,9 +706,17 @@ export default function HomeView() {
                 {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0, marginBottom: '8px' }}>
               "Buscávamos uma imersão que fosse além do passeio básico, e a Monotour foi maravilhosa. Contato real com a natureza, moradores e atmosfera da ilha. Saímos com a sensação de ter realmente vivido o Combu."
             </p>
+            <a 
+              href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', alignSelf: 'flex-end', marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+            >
+              Ver no Google ↗
+            </a>
           </div>
 
           {/* Review 4: Thaís Alves */}
@@ -706,9 +730,17 @@ export default function HomeView() {
                 {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0, marginBottom: '8px' }}>
               "Dia incrível e confortável com a Monotour. Bastante informação e contato com pessoas excepcionais ao longo do passeio. Destaque para o almoço maravilhoso com opção vegana no Restaurante da Rosa!"
             </p>
+            <a 
+              href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', alignSelf: 'flex-end', marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+            >
+              Ver no Google ↗
+            </a>
           </div>
 
           {/* Review 5: Camila Louis Oliveira */}
@@ -722,9 +754,17 @@ export default function HomeView() {
                 {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0, marginBottom: '8px' }}>
               "Passeio maravilhoso, seguro e responsável. A acolhida foi fantástica, o almoço estava incrível e a empresa valoriza e respeita de verdade a comunidade local. Recomendo de olhos fechados!"
             </p>
+            <a 
+              href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', alignSelf: 'flex-end', marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+            >
+              Ver no Google ↗
+            </a>
           </div>
 
           {/* Review 6: Manoela das Graças */}
@@ -738,9 +778,17 @@ export default function HomeView() {
                 {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0, marginBottom: '8px' }}>
               "Recomendo demais! Os guias são acolhedores, a comida no Restô da Dona Rosa é sem explicação de tão boa, e o Seu Ladi é um fofo! Amei todo o roteiro e recomendo de olhos fechados!"
             </p>
+            <a 
+              href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', alignSelf: 'flex-end', marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+            >
+              Ver no Google ↗
+            </a>
           </div>
 
         </div>

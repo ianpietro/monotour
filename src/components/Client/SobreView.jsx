@@ -115,34 +115,64 @@ export default function SobreView() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }} className="booking-grid">
           
-          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)' }}>
-            <div style={{ display: 'flex', gap: '2px', color: '#c6943e', marginBottom: '10px' }}>
+          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div style={{ display: 'flex', gap: '2px', color: '#c6943e', marginBottom: '4px' }}>
               {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
             </div>
-            <p style={{ fontSize: '0.88rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', marginBottom: '12px' }}>
+            <p style={{ fontSize: '0.88rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0, marginBottom: '6px' }}>
               "Estávamos procurando uma agência que nos proporcionasse uma experiência mais imersiva, que fosse além do passeio básico, e a Monotour foi simplesmente maravilhosa nisso. Tivemos contato real com a natureza e com a cultura local... Saímos com a sensação de ter realmente vivido o Combu, e não apenas visitado."
             </p>
-            <strong style={{ fontSize: '0.8rem', color: 'var(--text-h)' }}>— Rafaella Nascimento</strong>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto', paddingTop: '8px' }}>
+              <strong style={{ fontSize: '0.8rem', color: 'var(--text-h)' }}>— Rafaella Nascimento</strong>
+              <a 
+                href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+              >
+                Ver no Google ↗
+              </a>
+            </div>
           </div>
 
-          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)' }}>
-            <div style={{ display: 'flex', gap: '2px', color: '#c6943e', marginBottom: '10px' }}>
+          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div style={{ display: 'flex', gap: '2px', color: '#c6943e', marginBottom: '4px' }}>
               {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
             </div>
-            <p style={{ fontSize: '0.88rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', marginBottom: '12px' }}>
+            <p style={{ fontSize: '0.88rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0, marginBottom: '6px' }}>
               "A Monotour é muito mais que um passeio, é uma imersão cultural, uma vivência. Valeu cada momento no dia de hoje, conhecendo um pouco mais do meu Brasil. Gratidão ao senhor Ladi, d. Nena, d. Rosa... Raquel é uma paraense arretada com sangue nos olhos para defender sua terra e cultura."
             </p>
-            <strong style={{ fontSize: '0.8rem', color: 'var(--text-h)' }}>— Idalice Santos</strong>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto', paddingTop: '8px' }}>
+              <strong style={{ fontSize: '0.8rem', color: 'var(--text-h)' }}>— Idalice Santos</strong>
+              <a 
+                href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+              >
+                Ver no Google ↗
+              </a>
+            </div>
           </div>
 
-          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)' }}>
-            <div style={{ display: 'flex', gap: '2px', color: '#c6943e', marginBottom: '10px' }}>
+          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div style={{ display: 'flex', gap: '2px', color: '#c6943e', marginBottom: '4px' }}>
               {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
             </div>
-            <p style={{ fontSize: '0.88rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', marginBottom: '12px' }}>
+            <p style={{ fontSize: '0.88rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0, marginBottom: '6px' }}>
               "Foi uma das experiências mais maravilhosas que já vivi! Me senti acolhida, abraçada e muito bem recebida. Que equipe querida, divertida, calorosa... Queria poder ficar mais, conhecer mais, aprender mais. Amei estar com a equipe Monotour e ter explorado o Combu com vocês."
             </p>
-            <strong style={{ fontSize: '0.8rem', color: 'var(--text-h)' }}>— Juliana Pinheiro</strong>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto', paddingTop: '8px' }}>
+              <strong style={{ fontSize: '0.8rem', color: 'var(--text-h)' }}>— Juliana Pinheiro</strong>
+              <a 
+                href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '2px' }}
+              >
+                Ver no Google ↗
+              </a>
+            </div>
           </div>
 
         </div>
