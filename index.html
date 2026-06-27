@@ -21,6 +21,103 @@
         }
       }
     </script>
+
+    <!-- Google Structured Data (Schema.org) for Google Travel & 'Things to do' -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Monotour",
+        "image": "https://monotour-belem.vercel.app/assets/combu_nature_tour.png",
+        "@id": "https://monotour-belem.vercel.app/#agency",
+        "url": "https://monotour-belem.vercel.app",
+        "telephone": "+5591992753444",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Praça Princesa Isabel",
+          "addressLocality": "Belém",
+          "addressRegion": "PA",
+          "postalCode": "66065-200",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -1.4729,
+          "longitude": -48.4631
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        "sameAs": [
+          "https://www.instagram.com/monotour_"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TouristTrip",
+        "name": "Imersão Ilha do Combu e Furo da Paciência",
+        "description": "Passeio fluvial completo de ecoturismo de base comunitária em Belém, Pará. Inclui visita ao Sítio do Seu Ladi, almoço ribeirinho da Dona Rosa, produção de cacau da Dona Nena e acessibilidade completa em Libras.",
+        "provider": {
+          "@type": "TravelAgency",
+          "name": "Monotour",
+          "url": "https://monotour-belem.vercel.app"
+        },
+        "touristType": "Ecoturistas, famílias, viajantes em busca de cultura local, comunidade surda (acessível em Libras)",
+        "offers": {
+          "@type": "Offer",
+          "price": "280.00",
+          "priceCurrency": "BRL",
+          "url": "https://monotour-belem.vercel.app/#/reserva",
+          "category": "Admission",
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "value": 1
+          }
+        },
+        "itinerary": [
+          {
+            "@type": "City",
+            "name": "Belém",
+            "description": "Embarque na Praça Princesa Isabel"
+          },
+          {
+            "@type": "TouristAttraction",
+            "name": "Sítio do Seu Ladi (Boa Vista do Acará)",
+            "description": "Vivência do açaí, castanha in natura e caminhada sob Samaúmas centenárias."
+          },
+          {
+            "@type": "TouristAttraction",
+            "name": "Restaurante Resto da Ilha (Dona Rosa)",
+            "description": "Almoço ribeirinho artesanal completo e banho de rio no Furo da Paciência."
+          },
+          {
+            "@type": "TouristAttraction",
+            "name": "AME Combu",
+            "description": "Associação de Mulheres Extrativistas produtoras de óleos medicinais de andiroba."
+          },
+          {
+            "@type": "TouristAttraction",
+            "name": "Filha do Combu (Dona Nena)",
+            "description": "Produção e degustação de cacau orgânico no meio da floresta."
+          }
+        ],
+        "duration": "PT7H"
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
