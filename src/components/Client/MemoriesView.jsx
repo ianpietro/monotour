@@ -493,22 +493,22 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
               <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-h)', marginBottom: '6px' }}>📍 Gastronomia / Açaí</h4>
               <ul style={{ fontSize: '0.82rem', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '6px', color: 'var(--text)' }}>
                 <li>
-                  <a href="https://www.instagram.com/veroacaibelem/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Ver-O-A%C3%A7a%C3%AD+Bel%C3%A9m" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
                     Ver-O-Açaí ↗
                   </a>: O melhor açaí tradicional com peixe.
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/iacitata_/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Instituto+Iacitat%C3%A1+Bel%C3%A9m" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
                     Iacitatá ↗
                   </a>: Cozinha paraense raiz e fomento alimentar.
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/pointdoacai_belem/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Point+do+A%C3%A7a%C3%AD+Bel%C3%A9m" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
                     Point do Açaí ↗
                   </a>: Açaí e peixes na brasa impecáveis.
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/amazonianacuia/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Amaz%C3%B4nia+na+Cuia+Bel%C3%A9m" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
                     Amazônia na Cuia ↗
                   </a>: Opções locais servidas na cuia típica.
                 </li>
@@ -519,12 +519,12 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
               <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-h)', marginBottom: '6px' }}>🎵 Shows e Cultura</h4>
               <ul style={{ fontSize: '0.82rem', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '6px', color: 'var(--text)' }}>
                 <li>
-                  <a href="https://www.instagram.com/espacoculturalapoena/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Cultural+Apoena+Bel%C3%A9m" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
                     Espaço Apoena & Casa Apoena ↗
                   </a>: Carimbó raiz e música regional paraense ao vivo.
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/restaurantenamare/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Restaurante+Na+Mar%C3%A9+Bel%C3%A9m" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
                     Na Maré ↗
                   </a>: Visual incrível da orla de Belém com música ao vivo.
                 </li>
