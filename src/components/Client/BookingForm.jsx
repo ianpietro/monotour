@@ -13,11 +13,8 @@ export default function BookingForm({ onBookingSuccess }) {
     paymentMethod: 'pix'
   });
 
-  const [pricing, setPricing] = useState({
-    subtotal: 700,
-    interpreterFee: 0,
-    gatewayFee: 0,
-    totalPaid: 700
+  const [pricing, setPricing] = useState(() => {
+    return calculateTotal(2, 'portugues', 'pix');
   });
 
   const [isPaid, setIsPaid] = useState(false);

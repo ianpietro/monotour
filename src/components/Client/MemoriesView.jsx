@@ -239,23 +239,45 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
           Seu coração também ficou na floresta?
         </h3>
         <p style={{ color: 'var(--text)', fontSize: '0.9rem', lineHeight: '1.5', maxWidth: '650px', margin: 0 }}>
-          Olá, <strong>{getFirstName(booking.clientName)}</strong>! A nossa maior alegria é compartilhar o saber tradicional e a beleza da Amazônia com você. Se a sua vivência com a comunidade do Combu foi especial, ajude a espalhar essa semente! Deixe uma avaliação carinhosa no Google para apoiar o turismo comunitário e as famílias ribeirinhas que nos receberam.
+          Olá, <strong>{getFirstName(booking.clientName)}</strong>! A nossa maior alegria é compartilhar o saber tradicional e a beleza da Amazônia com você. Se a sua vivência com a comunidade do Combu foi especial, ajude a espalhar essa semente! Deixe uma avaliação no Google ou no TripAdvisor para apoiar o turismo comunitário e as famílias ribeirinhas que nos receberam.
         </p>
-        <a 
-          href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48b94ef11749b:0xf13788c0350d2bb0,1" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="btn btn-gold"
-          style={{ 
-            marginTop: '8px', 
-            padding: '12px 28px', 
-            fontSize: '0.92rem', 
-            boxShadow: '0 4px 10px rgba(255, 184, 0, 0.3)',
-            textDecoration: 'none'
-          }}
-        >
-          Escrever Avaliação no Google 🌟
-        </a>
+        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '8px', width: '100%' }}>
+          <a 
+            href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-gold"
+            style={{ 
+              padding: '12px 24px', 
+              fontSize: '0.92rem', 
+              boxShadow: '0 4px 10px rgba(255, 184, 0, 0.15)',
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            Avaliar no Google 🌟
+          </a>
+          <a 
+            href="https://www.tripadvisor.com.br/Attraction_Review-g303404-d23839296-Reviews-Monotour_Belem-Belem_State_of_Para.html" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-secondary"
+            style={{ 
+              padding: '12px 24px', 
+              fontSize: '0.92rem', 
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              border: '1px solid var(--border)',
+              background: '#fff'
+            }}
+          >
+            Avaliar no TripAdvisor 🦉
+          </a>
+        </div>
       </div>
 
       {/* Pós-Venda: Lembranças e Novos Roteiros */}
