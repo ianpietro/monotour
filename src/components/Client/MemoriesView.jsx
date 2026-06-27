@@ -491,19 +491,43 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
 
             <div style={{ marginBottom: '16px' }}>
               <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-h)', marginBottom: '6px' }}>📍 Gastronomia / Açaí</h4>
-              <ul style={{ fontSize: '0.82rem', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px', color: 'var(--text)' }}>
-                <li><strong>Ver o Açaí:</strong> O melhor açaí tradicional com peixe.</li>
-                <li><strong>Iacitata:</strong> Cozinha paraense raiz e fomento alimentar.</li>
-                <li><strong>Point do Açaí:</strong> Açaí e peixes na brasa impecáveis.</li>
-                <li><strong>Amazônia na Cuia:</strong> Opções locais servidas na cuia típica.</li>
+              <ul style={{ fontSize: '0.82rem', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '6px', color: 'var(--text)' }}>
+                <li>
+                  <a href="https://www.instagram.com/veroacaibelem/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                    Ver-O-Açaí ↗
+                  </a>: O melhor açaí tradicional com peixe.
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/iacitata_/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                    Iacitatá ↗
+                  </a>: Cozinha paraense raiz e fomento alimentar.
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/pointdoacai_belem/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                    Point do Açaí ↗
+                  </a>: Açaí e peixes na brasa impecáveis.
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/amazonianacuia/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                    Amazônia na Cuia ↗
+                  </a>: Opções locais servidas na cuia típica.
+                </li>
               </ul>
             </div>
 
             <div>
               <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-h)', marginBottom: '6px' }}>🎵 Shows e Cultura</h4>
-              <ul style={{ fontSize: '0.82rem', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px', color: 'var(--text)' }}>
-                <li><strong>Espaço Apoena & Casa Apoena:</strong> Carimbó raiz e música regional paraense ao vivo.</li>
-                <li><strong>Na Maré:</strong> Visual incrível da orla de Belém com música ao vivo.</li>
+              <ul style={{ fontSize: '0.82rem', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '6px', color: 'var(--text)' }}>
+                <li>
+                  <a href="https://www.instagram.com/espacoculturalapoena/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                    Espaço Apoena & Casa Apoena ↗
+                  </a>: Carimbó raiz e música regional paraense ao vivo.
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/restaurantenamare/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                    Na Maré ↗
+                  </a>: Visual incrível da orla de Belém com música ao vivo.
+                </li>
               </ul>
             </div>
           </div>
