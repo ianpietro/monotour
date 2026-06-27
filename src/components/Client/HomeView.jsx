@@ -504,25 +504,34 @@ export default function HomeView() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }} className="booking-grid">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }} className="booking-grid">
           
           <div className="glass-card" style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column', border: '1px solid var(--border)' }}>
-            <img 
-              src="/assets/typical_paraense_food.png" 
-              alt="Peixe frito com guarnições e farinha na Ilha do Combu" 
-              style={{ width: '100%', height: '320px', objectFit: 'cover' }}
-            />
-            <div style={{ padding: '24px', textAlign: 'left' }}>
+            <div style={{ position: 'relative', height: '320px', background: '#f5f5f5' }}>
+              <img 
+                src="/assets/ladi_rindo.jpg" 
+                alt="Seu Ladi sorrindo no sítio dele" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+              <div style={{ position: 'absolute', bottom: '12px', right: '12px', width: '80px', height: '80px', borderRadius: '6px', overflow: 'hidden', border: '2px solid #fff', boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}>
+                <img 
+                  src="/assets/mao_ladi_castanha.jpg" 
+                  alt="Mão cortando castanha" 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </div>
+            </div>
+            <div style={{ padding: '24px', textAlign: 'left', display: 'flex', flexDirection: 'column', flex: '1' }}>
               <span 
                 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--accent-acai)', fontWeight: '700', letterSpacing: '0.05em' }}
               >
-                GASTRONOMIA RIBEIRINHA
+                EXTRATIVISMO E FLORESTA EM PÉ
               </span>
               <h4 style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--text-h)', margin: '6px 0 10px 0' }}>
-                O Legítimo Peixe Frito com Acompanhamentos
+                O Sítio do Seu Ladi
               </h4>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
-                Dona Rosalina nos recebe em seu sítio com o almoço tradicional: peixe fresco pescado na região, dourado na frigideira, servido com a clássica farinha d'água de Bragança e guarnições locais. Um ritual de sabor sagrado nas ilhas de Belém.
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+                No Acará, o Seu Ladi nos guia sob a copa das Samaúmas gigantes. Vivenciamos o extrativismo tradicional do açaí, aprendemos a colher e cortar a castanha-do-pará in natura para comer direto da casca, e conhecemos o poder das ervas medicinais.
               </p>
             </div>
           </div>
@@ -533,7 +542,7 @@ export default function HomeView() {
               alt="Colheita de Cacau Orgânico na Ilha do Combu" 
               style={{ width: '100%', height: '320px', objectFit: 'cover' }}
             />
-            <div style={{ padding: '24px', textAlign: 'left' }}>
+            <div style={{ padding: '24px', textAlign: 'left', display: 'flex', flexDirection: 'column', flex: '1' }}>
               <span 
                 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--accent-acai)', fontWeight: '700', letterSpacing: '0.05em' }}
               >
@@ -542,8 +551,29 @@ export default function HomeView() {
               <h4 style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--text-h)', margin: '6px 0 10px 0' }}>
                 O Cacau da Dona Nena
               </h4>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
                 Caminhamos pelas trilhas de cacau selvagem e aprendemos como as sementes são fermentadas e secas no sol. Dona Nena (conhecida nacionalmente) compartilha os segredos de seu chocolate 100% orgânico e rústico, mantendo a floresta de pé e produtiva.
+              </p>
+            </div>
+          </div>
+
+          <div className="glass-card" style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column', border: '1px solid var(--border)' }}>
+            <img 
+              src="/assets/typical_paraense_food.png" 
+              alt="Peixe frito com guarnições e farinha na Ilha do Combu" 
+              style={{ width: '100%', height: '320px', objectFit: 'cover' }}
+            />
+            <div style={{ padding: '24px', textAlign: 'left', display: 'flex', flexDirection: 'column', flex: '1' }}>
+              <span 
+                style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--accent-acai)', fontWeight: '700', letterSpacing: '0.05em' }}
+              >
+                GASTRONOMIA RIBEIRINHA
+              </span>
+              <h4 style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--text-h)', margin: '6px 0 10px 0' }}>
+                O Almoço da Dona Rosa
+              </h4>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+                Sentamos à beira do rio para uma refeição autêntica no restaurante Resto da Ilha: peixe fresco dourado na frigideira, servido com a clássica farinha d'água de Bragança e caldeirada. Um ritual de sabor sagrado nas ilhas de Belém.
               </p>
             </div>
           </div>

@@ -65,6 +65,69 @@ export default function SobreView() {
         </div>
       </section>
 
+      {/* 2.5 OS PARCEIROS E PROTAGONISTAS */}
+      <section style={{ marginBottom: '50px', textAlign: 'left' }}>
+        <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+          <span style={{ color: 'var(--accent-acai)', fontWeight: '700', textTransform: 'uppercase', fontSize: '0.85rem', letterSpacing: '0.12em', display: 'block', marginBottom: '8px' }}>
+            QUEM NOS RECEBE
+          </span>
+          <h2 style={{ fontSize: '2.2rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)', margin: 0 }}>
+            A floresta viva pelas mãos de quem a cuida
+          </h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '8px' }}>
+            Nossos parceiros locais não são "atrações" — eles são sócios e protagonistas do passeio. Conheça as histórias reais por trás de cada parada:
+          </p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }} className="booking-grid">
+          
+          {/* Card: Seu Ladi */}
+          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', height: '150px' }}>
+              <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border)', height: '100%' }}>
+                <img src="/assets/ladi_rindo.jpg" alt="Seu Ladi sorrindo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
+              <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border)', height: '100%' }}>
+                <img src="/assets/mao_ladi_castanha.jpg" alt="Mão de Seu Ladi cortando castanha" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.2rem', color: 'var(--text-h)', marginBottom: '8px', fontWeight: '700' }}>Seu Ladi (Boa Vista do Acará)</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+                Produtor tradicional e guardião de Samaúmas centenárias. Ele abre seu sítio familiar para nos ensinar o extrativismo do açaí, a colheita da castanha-do-pará in natura e a sabedoria das plantas medicinais da floresta.
+              </p>
+            </div>
+          </div>
+
+          {/* Card: Dona Nena */}
+          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border)', height: '150px' }}>
+              <img src="/assets/combu_cacao_experience.png" alt="Produção de cacau da Dona Nena" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.2rem', color: 'var(--text-h)', marginBottom: '8px', fontWeight: '700' }}>Dona Nena (Filha do Combu)</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+                Referência nacional na produção de chocolate artesanal 100% selvagem da Amazônia. Em sua cozinha de igarapé, ela compartilha o processo ancestral de secagem, fermentação e moagem das sementes de cacau.
+              </p>
+            </div>
+          </div>
+
+          {/* Card: Dona Rosa */}
+          <div className="glass-card" style={{ padding: '24px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border)', height: '150px' }}>
+              <img src="/assets/typical_paraense_food.png" alt="Comida típica no Resto da Ilha" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.2rem', color: 'var(--text-h)', marginBottom: '8px', fontWeight: '700' }}>Dona Rosa (Restaurante Resto da Ilha)</h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+                Líder da cozinha comunitária ribeirinha. Ao lado de suas irmãs, ela prepara um almoço tradicional inesquecível com peixe frito, caldeirada fresca e açaí batido na hora, servido na beira do Furo da Paciência.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* 3. MANIFESTO E CRENÇAS */}
       <section className="glass-card" style={{ padding: '40px 30px', marginBottom: '50px', background: 'rgba(11, 79, 54, 0.02)', border: '1px solid var(--border)', textAlign: 'left' }}>
         <h2 style={{ fontSize: '1.8rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)', marginBottom: '30px', textAlign: 'center' }}>
