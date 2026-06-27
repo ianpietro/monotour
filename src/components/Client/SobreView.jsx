@@ -22,7 +22,7 @@ export default function SobreView() {
       >
         <Compass size={40} className="logo-monkey" style={{ marginBottom: '8px' }} />
         <h1 style={{ fontSize: '3rem', fontFamily: 'var(--font-serif)', fontStyle: 'italic', color: 'var(--text-h)', margin: 0 }}>
-          Nossa Alma & Propósito
+          O que a gente acredita
         </h1>
         <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '700px', lineHeight: '1.6', margin: 0 }}>
           Conheça a história da Monotour e como criamos um jeito diferente de viajar, focado em ouvir quem mora na ilha, proteger a floresta e receber todo mundo com acessibilidade em Libras.
@@ -42,7 +42,7 @@ export default function SobreView() {
             A Monotour nasceu do nosso amor profundo por Belém, pelas ilhas e pela cultura paraense. Como casal de amazônidas, víamos o turismo convencional muitas vezes tratar a floresta e as pessoas como meras atrações comerciais. Decidimos fazer diferente: queríamos um passeio que respeitasse o tempo do rio, valorizasse os saberes locais e trouxesse as comunidades ribeirinhas para o centro da história.
           </p>
           <blockquote style={{ borderLeft: '4px solid var(--accent-acai)', paddingLeft: '20px', margin: '24px 0', fontStyle: 'italic', color: 'var(--text-h)', fontSize: '1.1rem', fontWeight: '500' }}>
-            "Mais do que levar pessoas de barco, nosso propósito é ligar vidas. Acreditamos que a floresta só fica de pé se quem cuida dela for respeitado e valorizado."
+            "Mais do que levar pessoas de barco, a nossa vontade é aproximar histórias e criar laços de afeto e respeito. Acreditamos que a floresta só fica de pé se quem cuida dela for respeitado e valorizado."
           </blockquote>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
