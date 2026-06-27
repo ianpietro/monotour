@@ -261,10 +261,10 @@ export default function HomeView() {
             MÉDIA 5.0 ESTRELAS NO GOOGLE
           </span>
           <h2 style={{ fontSize: '2.4rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)' }}>
-            O que nossos viajantes mais elogiam
+            O que as pessoas mais elogiam no nosso passeio
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>
-            Com base nas nossas 491 avaliações de 5 estrelas no Google, estes são os diferenciais que tornam o nosso passeio à Ilha do Combu uma vivência transformadora:
+            Olhando as nossas 491 avaliações de 5 estrelas no Google, percebemos que o que realmente toca os viajantes são estes detalhes:
           </p>
         </div>
 
@@ -275,10 +275,10 @@ export default function HomeView() {
               <div style={{ background: 'rgba(122, 28, 74, 0.08)', color: 'var(--accent-acai)', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Users size={24} />
               </div>
-              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Conexão Real com a Comunidade</strong>
+              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Encontro com as famílias locais</strong>
             </div>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              Nada de encenações. Nossos roteiros dão protagonismo real às famílias ribeirinhas. No Seu Ladi, na Dona Nena e na Dona Rosa, você terá conversas sinceras e vivenciará o cotidiano amazônico de forma autêntica.
+              Aqui não tem nada ensaiado. Você vai entrar na casa das pessoas, conversar de perto com o Seu Ladi, provar o chocolate da Dona Nena e almoçar na Dona Rosa. É um dia compartilhado com quem vive no rio, do jeito que é de verdade.
             </p>
           </div>
 
@@ -287,10 +287,10 @@ export default function HomeView() {
               <div style={{ background: 'rgba(11, 79, 54, 0.08)', color: 'var(--accent-light)', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Sparkles size={24} />
               </div>
-              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Conhecimento com Alma</strong>
+              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>A prosa do Leandro e da Raquel</strong>
             </div>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              A condução atenciosa de Leandro e Raquel vai muito além de indicar caminhos. Aprenda sobre fauna, flora (como a imponente Samaúma) e lendas regionais em um bate-papo dinâmico, leve e inesquecível.
+              O Leandro e a Raquel não são aqueles guias tradicionais que só mostram caminhos. Eles conhecem cada canto, planta e história do lugar. O papo é leve, carinhoso e você vai sair daqui entendendo os segredos de árvores gigantes como a Samaúma.
             </p>
           </div>
 
@@ -299,10 +299,10 @@ export default function HomeView() {
               <div style={{ background: 'rgba(255, 184, 0, 0.08)', color: '#d99e00', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Utensils size={24} />
               </div>
-              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Almoço Ribeirinho Lendário</strong>
+              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Almoço com os pés na água</strong>
             </div>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              A comida caseira e fresca servida pela Dona Rosa no restaurante Restô da Ilha é descrita como impecável. Saboreie os clássicos da região com tranquilidade, de frente para o rio e de pés descalços.
+              O almoço no Restô da Ilha, feito pela Dona Rosa, é daqueles de comer rezando. Peixe frito na hora, temperos da terra e aquela brisa boa do rio. É para saborear sem pressa, de pés descalços e descansando na rede depois.
             </p>
           </div>
 
@@ -311,10 +311,10 @@ export default function HomeView() {
               <div style={{ background: 'rgba(11, 79, 54, 0.08)', color: 'var(--accent-light)', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <CheckCircle size={24} />
               </div>
-              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Turismo Ético e Seguro</strong>
+              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Cuidado, respeito e lancha boa</strong>
             </div>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              Compromisso real com o fomento sustentável (remuneração justa a barqueiros e moradores) e com o seu bem-estar (lancha rápida confortável, coletes sob medida e total acessibilidade comunicacional em Libras).
+              Valorizamos de verdade quem trabalha conosco: todo ribeirinho e barqueiro recebe de forma justa. Nossas lanchas são rápidas, seguras e muito confortáveis, com coletes adequados para todos e guiamento completo em Libras.
             </p>
           </div>
 
@@ -645,101 +645,101 @@ export default function HomeView() {
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }} className="booking-grid">
           
           {/* Review 1: Juliana Pinheiro */}
-          <div className="glass-card" style={{ padding: '30px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <div className="glass-card" style={{ padding: '20px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--text-h)' }}>Juliana Pinheiro</strong>
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Local Guide • 12 avaliações</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--text-h)' }}>Juliana Pinheiro</strong>
+                <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>Local Guide • 12 avaliações</span>
               </div>
               <div style={{ display: 'flex', gap: '2px', color: '#c6943e' }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" style={{ border: 'none' }} />)}
+                {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0 }}>
-              "Foi uma experiência única, compartilhando histórias e trajetórias. Me senti acolhida, abraçada e muito bem recebida. Que equipe querida, divertida, calorosa... Foi uma das experiências mais maravilhosas que já vivi! Queria poder ficar mais, conhecer mais, aprender mais. Amei estar com a equipe Monotour e ter explorado combu com vocês. 🌹"
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+              "Foi uma das experiências mais maravilhosas que já vivi! Me senti acolhida, abraçada e muito bem recebida. Equipe querida, divertida e calorosa... Amei ter explorado o Combu com a Monotour. 🌹"
             </p>
           </div>
 
           {/* Review 2: Idalice Santos */}
-          <div className="glass-card" style={{ padding: '30px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <div className="glass-card" style={{ padding: '20px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--text-h)' }}>Idalice Santos</strong>
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Local Guide • 18 avaliações</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--text-h)' }}>Idalice Santos</strong>
+                <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>Local Guide • 18 avaliações</span>
               </div>
               <div style={{ display: 'flex', gap: '2px', color: '#c6943e' }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" style={{ border: 'none' }} />)}
+                {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0 }}>
-              "Gente!! O Leandro e a Raquel (uma paraense arretada, com sangue nos olhos para defender sua terra e cultura) nos ensina muito. A Monotour é muito mais que um passeio, é uma imersão cultural, uma vivência. Valeu cada momento no dia de hoje, conhecendo um pouco mais do meu Brasil, tudo que me permitir qdo decidi vir a Belém. Gratidão aos dois, ao senhor Ladi, d. Nena (faz um chocolate espetacular), D. Rosa (Resto da ilha)..."
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+              "A Monotour é muito mais que um passeio, é uma imersão cultural. Gratidão ao Leandro, à Raquel, ao Seu Ladi, à d. Nena (chocolate espetacular) e à d. Rosa (almoço maravilhoso). Valeu cada segundo!"
             </p>
           </div>
 
           {/* Review 3: Rafaella Nascimento */}
-          <div className="glass-card" style={{ padding: '30px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <div className="glass-card" style={{ padding: '20px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--text-h)' }}>Rafaella Nascimento</strong>
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>7 avaliações • 1 foto</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--text-h)' }}>Rafaella Nascimento</strong>
+                <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>7 avaliações • 1 foto</span>
               </div>
               <div style={{ display: 'flex', gap: '2px', color: '#c6943e' }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" style={{ border: 'none' }} />)}
+                {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0 }}>
-              "Estávamos procurando uma agência que nos proporcionasse uma experiência mais imersiva, que fosse além do passeio básico e a Monotour foi simplesmente maravilhosa nisso. O Leandro tem muito conhecimento do Combu e é muito conectado com o lugar. Tivemos contato real com a natureza, com a cultura local e com a atmosfera da ilha... Foi uma vivência acolhedora, exatamente o que buscávamos. Saímos com a sensação de ter realmente vivido o Combu, e não apenas visitado. Recomendo demais a Agência Monotur para quem deseja uma experiência verdadeira."
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+              "Buscávamos uma imersão que fosse além do passeio básico, e a Monotour foi maravilhosa. Contato real com a natureza, moradores e atmosfera da ilha. Saímos com a sensação de ter realmente vivido o Combu."
             </p>
           </div>
 
           {/* Review 4: Thaís Alves */}
-          <div className="glass-card" style={{ padding: '30px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <div className="glass-card" style={{ padding: '20px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--text-h)' }}>Thaís Alves</strong>
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Local Guide • 71 avaliações</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--text-h)' }}>Thaís Alves</strong>
+                <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>Local Guide • 71 avaliações</span>
               </div>
               <div style={{ display: 'flex', gap: '2px', color: '#c6943e' }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" style={{ border: 'none' }} />)}
+                {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0 }}>
-              "Passamos um dia incrível com o Leandro da Monotour. Tivemos a imersão que buscávamos na nossa viagem a Belém. Tudo muito confortável, com bastante informação e contato com pessoas excepcionais ao longo do dia. Destaque pro almoço com opção vegana no Restaurante da Rosa, indico demais!"
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+              "Dia incrível e confortável com a Monotour. Bastante informação e contato com pessoas excepcionais ao longo do passeio. Destaque para o almoço maravilhoso com opção vegana no Restaurante da Rosa!"
             </p>
           </div>
 
           {/* Review 5: Camila Louis Oliveira */}
-          <div className="glass-card" style={{ padding: '30px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <div className="glass-card" style={{ padding: '20px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--text-h)' }}>Camila Louis Oliveira</strong>
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>5 avaliações • 6 fotos</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--text-h)' }}>Camila Louis</strong>
+                <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>5 avaliações • 6 fotos</span>
               </div>
               <div style={{ display: 'flex', gap: '2px', color: '#c6943e' }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" style={{ border: 'none' }} />)}
+                {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0 }}>
-              "Escolhemos a Monotour para um passeio na Ilha do Combu, e foi uma ótima escolha. Nos sentimos muito bem acolhidos, nosso passeio foi muito bom, com segurança e responsabilidade, almoço maravilhoso e empresa comprometida com o turismo sustentável e que valoriza e respeita a comunidade local. Recomendo!"
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+              "Passeio maravilhoso, seguro e responsável. A acolhida foi fantástica, o almoço estava incrível e a empresa valoriza e respeita de verdade a comunidade local. Recomendo de olhos fechados!"
             </p>
           </div>
 
           {/* Review 6: Manoela das Graças */}
-          <div className="glass-card" style={{ padding: '30px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          <div className="glass-card" style={{ padding: '20px', background: '#fff', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <strong style={{ fontSize: '0.95rem', color: 'var(--text-h)' }}>Manoela das Graças</strong>
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>2 avaliações • 18 fotos</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--text-h)' }}>Manoela das Graças</strong>
+                <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>2 avaliações • 18 fotos</span>
               </div>
               <div style={{ display: 'flex', gap: '2px', color: '#c6943e' }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" style={{ border: 'none' }} />)}
+                {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" style={{ border: 'none' }} />)}
               </div>
             </div>
-            <p style={{ fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.6', margin: 0 }}>
-              "Estava super animada para o passeio e recomendo de olhos fechados!!! A experiência é incrível, os guias maravilhosos e acolhedores! O restaurante Restô da Ilha com uma comida sem explicação de tão boa! Seu Ladi um fofo! Amei todo o roteiro e recomendo de olhos fechados!"
+            <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--text)', lineHeight: '1.55', margin: 0 }}>
+              "Recomendo demais! Os guias são acolhedores, a comida no Restô da Dona Rosa é sem explicação de tão boa, e o Seu Ladi é um fofo! Amei todo o roteiro e recomendo de olhos fechados!"
             </p>
           </div>
 

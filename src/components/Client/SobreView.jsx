@@ -1,5 +1,5 @@
 import React from 'react';
-import { Compass, Heart, Users, Sparkles, ShieldCheck, ArrowRight, MessageSquare } from 'lucide-react';
+import { Compass, Heart, Users, Sparkles, ShieldCheck, ArrowRight } from 'lucide-react';
 
 export default function SobreView() {
   return (
@@ -25,7 +25,7 @@ export default function SobreView() {
           Nossa Alma & Propósito
         </h1>
         <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '700px', lineHeight: '1.6', margin: 0 }}>
-          Descubra a história e a filosofia por trás do ecoturismo de base comunitária da Monotour, unindo preservação, respeito às comunidades e acessibilidade em Libras.
+          Conheça a história da Monotour e como criamos um jeito diferente de viajar, focado em ouvir quem mora na ilha, proteger a floresta e receber todo mundo com acessibilidade em Libras.
         </p>
       </section>
 
@@ -33,33 +33,33 @@ export default function SobreView() {
       <section className="booking-grid" style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '40px', marginBottom: '50px', alignItems: 'center', textAlign: 'left' }}>
         <div>
           <span style={{ color: 'var(--accent-acai)', fontWeight: '700', textTransform: 'uppercase', fontSize: '0.85rem', letterSpacing: '0.12em', display: 'block', marginBottom: '8px' }}>
-            QUEM CONDUZ
+            QUEM CRIOU
           </span>
           <h2 style={{ fontSize: '2.2rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)', marginBottom: '20px' }}>
-            Leandro & Raquel (Mono & Monodama)
+            A história de Leandro & Raquel
           </h2>
           <p style={{ fontSize: '1rem', color: 'var(--text)', lineHeight: '1.7', marginBottom: '16px' }}>
-            Fundada pelo casal Leandro e Raquel Ferreira, a Monotour nasceu de uma paixão profunda pelas riquezas naturais e culturais do Pará. Diante do turismo tradicional de massa, que muitas vezes enxerga a floresta de forma exploratória, eles decidiram criar uma alternativa que valorizasse quem realmente vive e protege esse ecossistema.
+            A Monotour nasceu do nosso amor profundo por Belém, pelas ilhas e pela cultura paraense. Como casal de amazônidas, víamos o turismo convencional muitas vezes tratar a floresta e as pessoas como meras atrações comerciais. Decidimos fazer diferente: queríamos um passeio que respeitasse o tempo do rio, valorizasse os saberes locais e trouxesse as comunidades ribeirinhas para o centro da história.
           </p>
           <blockquote style={{ borderLeft: '4px solid var(--accent-acai)', paddingLeft: '20px', margin: '24px 0', fontStyle: 'italic', color: 'var(--text-h)', fontSize: '1.1rem', fontWeight: '500' }}>
-            "Mais do que um passeio de barco, criamos pontes de afeto e respeito entre quem visita e quem vive na floresta. Acreditamos que a Amazônia só permanece em pé se as suas comunidades forem valorizadas."
+            "Mais do que levar pessoas de barco, nosso propósito é ligar vidas. Acreditamos que a floresta só fica de pé se quem cuida dela for respeitado e valorizado."
           </blockquote>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div className="glass-card" style={{ padding: '30px', background: '#fff', border: '1px solid var(--border)' }}>
             <h3 style={{ fontSize: '1.2rem', color: 'var(--text-h)', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Heart size={20} className="text-pink-600" /> Sensibilidade Social
+              <Heart size={20} className="text-pink-600" /> Respeito e afeto na beira do rio
             </h3>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              Nossos parceiros locais — Seu Ladi no extrativismo de açaí, Dona Nena no cacau orgânico, Dona Rosa na cozinha do Restô da Ilha e a associação de barqueiros — não são "atrações turísticas". São famílias reais, nossos sócios, que nos recebem em suas casas para compartilhar histórias de vida.
+              Quando visitamos o Seu Ladi no sítio dele, provamos o chocolate da Dona Nena ou sentamos para almoçar na Dona Rosa, não estamos visitando 'pontos turísticos'. Estamos sendo recebidos por famílias parceiras, em suas casas, ouvindo histórias reais de quem vive a Amazônia no dia a dia.
             </p>
           </div>
           <div className="glass-card" style={{ padding: '30px', background: '#fff', border: '1px solid var(--border)' }}>
             <h3 style={{ fontSize: '1.2rem', color: 'var(--text-h)', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <ShieldCheck size={20} className="text-emerald-700" /> Turismo de Impacto Comunitário
+              <ShieldCheck size={20} className="text-emerald-700" /> Dinheiro que fica na comunidade
             </h3>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              Garantimos um repasse financeiro justo e direto para cada morador envolvido no roteiro. O turismo de base comunitária da Monotour é uma ferramenta ativa de geração de renda e fortalecimento da bioeconomia local.
+              Fazemos questão de remunerar cada parceiro, barqueiro e morador de forma justa e direta. Acreditamos no turismo que fortalece a economia da própria ilha, gerando renda e mantendo vivas as tradições e a culinária local.
             </p>
           </div>
         </div>
@@ -68,32 +68,32 @@ export default function SobreView() {
       {/* 3. MANIFESTO E CRENÇAS */}
       <section className="glass-card" style={{ padding: '40px 30px', marginBottom: '50px', background: 'rgba(11, 79, 54, 0.02)', border: '1px solid var(--border)', textAlign: 'left' }}>
         <h2 style={{ fontSize: '1.8rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)', marginBottom: '30px', textAlign: 'center' }}>
-          No que Acreditamos (Nosso Manifesto)
+          O que a gente acredita e pratica todos os dias
         </h2>
         
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }} className="booking-grid">
           <div>
-            <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--text-h)', marginBottom: '8px' }}>🌱 1. Protagonismo Local</h4>
+            <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--text-h)', marginBottom: '8px' }}>🌱 1. Voz ativa para quem mora aqui</h4>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              Os moradores das ilhas são os guardiões da Amazônia. Damos a eles o controle e a voz principal sobre as narrativas que os cercam.
+              Os moradores das ilhas são os verdadeiros guardiões da floresta. Por isso, são eles que contam suas próprias histórias, do jeito que elas são, sem roteiros artificiais.
             </p>
           </div>
           <div>
-            <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--text-h)', marginBottom: '8px' }}>🤟 2. Acessibilidade Comunicacional</h4>
+            <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--text-h)', marginBottom: '8px' }}>🤟 2. Acessibilidade de verdade em Libras</h4>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              A Monotour é a única agência em Belém com atendimento e roteiros totalmente acessíveis em Libras, garantindo que o turismo na floresta seja verdadeiramente para todos.
+              Somos a única agência em Belém totalmente preparada para receber e guiar viajantes surdos em Libras. Queremos que a experiência de sentir a Amazônia seja acessível a todos.
             </p>
           </div>
           <div>
-            <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--text-h)', marginBottom: '8px' }}>🌿 3. Bioeconomia em Pé</h4>
+            <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--text-h)', marginBottom: '8px' }}>🌿 3. Floresta em pé e valorizada</h4>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              Valorizamos o extrativismo consciente de produtos da floresta (como andiroba, cacau e castanha), provando que o ecoturismo e a preservação ambiental são financeiramente sustentáveis.
+              Apoiamos e incentivamos o extrativismo artesanal — como a produção orgânica de cacau e o açaí colhido na hora. Mostramos que a floresta viva gera mais valor do que derrubada.
             </p>
           </div>
           <div>
-            <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--text-h)', marginBottom: '8px' }}>🛶 4. Conexão Genuína</h4>
+            <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--text-h)', marginBottom: '8px' }}>🛶 4. Sem pressa e com segurança</h4>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              Evitamos o turismo comercial estressante. Navegamos em lanchas rápidas e confortáveis, mas sem pressa, permitindo tempo para banho de rio, escuta atenta das Samaúmas e contemplação.
+              Nossos passeios são feitos em lanchas rápidas e cobertas, garantindo total conforto. Mas navegamos sem correria, com tempo de sobra para banho de rio, conversas longas e descanso.
             </p>
           </div>
         </div>
@@ -103,13 +103,13 @@ export default function SobreView() {
       <section style={{ marginBottom: '50px', textAlign: 'left' }}>
         <div style={{ textAlign: 'center', marginBottom: '30px' }}>
           <span style={{ color: 'var(--accent-acai)', fontWeight: '700', textTransform: 'uppercase', fontSize: '0.85rem', letterSpacing: '0.12em', display: 'block', marginBottom: '8px' }}>
-            PROVA SOCIAL
+            QUEM JÁ FOI
           </span>
           <h2 style={{ fontSize: '2.2rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)', margin: 0 }}>
-            A Voz de Quem já Navegou Conosco
+            O que as pessoas contam sobre a vivência
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '8px' }}>
-            Nossa sensibilidade e impacto são refletidos no carinho das mais de 491 avaliações de 5 estrelas no Google:
+            Ficamos muito felizes em ver que o carinho e o cuidado que colocamos no passeio são sentidos por quem nos visita:
           </p>
         </div>
 
@@ -164,17 +164,17 @@ export default function SobreView() {
       >
         <Sparkles size={28} style={{ color: 'var(--accent-gold)' }} />
         <h2 style={{ fontSize: '1.8rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)', margin: 0 }}>
-          Viva essa Experiência no Combu
+          Venha viver o Combu com a gente
         </h2>
         <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', maxWidth: '600px', margin: 0 }}>
-          Navegue conosco e descubra a força, os sabores e as histórias da floresta do ponto de vista de quem a protege todos os dias.
+          Navegue com a gente e conheça o rio, os sabores e as histórias da ilha pelos olhos de quem vive e protege este lugar todos os dias.
         </p>
         <button 
           onClick={() => window.location.hash = '#/reserva'} 
           className="btn btn-gold"
           style={{ padding: '14px 30px', fontSize: '1rem', marginTop: '8px' }}
         >
-          Agendar Minha Vivência <ArrowRight size={16} />
+          Quero reservar meu passeio <ArrowRight size={16} />
         </button>
       </section>
 
