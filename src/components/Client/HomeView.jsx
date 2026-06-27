@@ -62,7 +62,7 @@ export default function HomeView() {
   const faqItems = [
     {
       q: "O passeio inclui alimentação?",
-      a: "Sim! Um almoço ribeirinho completo preparado pela Dona Rosalina (peixe frito, caldeirada paraense, opções vegetarianas/veganas) está 100% incluso no valor da reserva, bem como água a bordo."
+      a: "Sim! Um almoço ribeirinho completo preparado pela Dona Rosa (peixe frito, caldeirada paraense, opções vegetarianas/veganas) está 100% incluso no valor da reserva, bem como água a bordo da lancha. Só um detalhe carinhoso: as bebidas do almoço no restaurante (como sucos ou cerveja) são pagas à parte diretamente lá, combinado?"
     },
     {
       q: "Como é a segurança a bordo da embarcação?",
@@ -604,7 +604,7 @@ export default function HomeView() {
                 Almoço Ribeirinho e Banho no Furo da Paciência
               </h4>
               <p style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: '1.6' }}>
-                Aportamos no restaurante Resto da Ilha, sob os cuidados de Dona Rosalina e suas irmãs. Elas nos servem uma autêntica refeição ribeirinha (peixe frito, caldeirada e guarnições locais) com ingredientes frescos. Depois, temos tempo livre para banho de rio no Furo da Paciência e descanso em redes sob a brisa da mata.
+                Aportamos no restaurante Resto da Ilha, sob os cuidados de Dona Rosa e suas irmãs. Elas nos servem uma autêntica refeição ribeirinha (peixe frito, caldeirada e guarnições locais) com ingredientes frescos. Depois, temos tempo livre para banho de rio no Furo da Paciência e descanso em redes sob a brisa da mata.
               </p>
             </div>
           </div>
