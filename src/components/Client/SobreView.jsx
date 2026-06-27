@@ -39,7 +39,7 @@ export default function SobreView() {
             A história de Leandro & Raquel
           </h2>
           <p style={{ fontSize: '1rem', color: 'var(--text)', lineHeight: '1.7', marginBottom: '16px' }}>
-            A Monotour nasceu do nosso amor profundo por Belém, pelas ilhas e pela cultura paraense. Como casal de amazônidas, víamos o turismo convencional muitas vezes tratar a floresta e as pessoas como meras atrações comerciais. Decidimos fazer diferente: queríamos um passeio que respeitasse o tempo do rio, valorizasse os saberes locais e trouxesse as comunidades ribeirinhas para o centro da história.
+            A Monotour nasceu do nosso amor por Belém, pelas ilhas e pela cultura paraense. A Raquel, que é paraense legítima, e o Leandro, que veio de fora e se apaixonou por essa terra, viam o turismo de massa muitas vezes tratar a floresta e as pessoas apenas como mercadoria. Decidimos fazer diferente: queríamos um passeio que respeitasse o tempo do rio, valorizasse a cultura local e trouxesse a comunidade para o centro da história.
           </p>
           <blockquote style={{ borderLeft: '4px solid var(--accent-acai)', paddingLeft: '20px', margin: '24px 0', fontStyle: 'italic', color: 'var(--text-h)', fontSize: '1.1rem', fontWeight: '500' }}>
             "Mais do que levar pessoas de barco, a nossa vontade é aproximar histórias e criar laços de afeto e respeito. Acreditamos que a floresta só fica de pé se quem cuida dela for respeitado e valorizado."
