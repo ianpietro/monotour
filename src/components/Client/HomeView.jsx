@@ -590,7 +590,7 @@ export default function HomeView() {
                 Extrativismo e a Rainha Samaúma (Boa Vista do Acará)
               </h4>
               <p style={{ fontSize: '0.92rem', color: 'var(--text)', lineHeight: '1.6' }}>
-                Nossa primeira parada é no Sítio do Seu Ladi. Aqui, vivenciamos o extrativismo do açaí e da castanha-do-pará (com degustação dela fresca, direto da casca). Em seguida, fazemos uma caminhada leve e silenciosa pela floresta secundária para conhecer cipós medicinais (como escada-de-jaboti), plantas aromáticas e abraçar as Samaúmas, as árvores rainhas da Amazônia.
+                Nossa primeira parada é no Sítio do Seu Ladi. Aqui, vivenciamos o extrativismo do açaí e da castanha-do-pará (com degustação dela fresca, direto da casca). Em seguida, fazemos uma caminhada leve e silenciosa pela floresta secundária para conhecer cipós medicinais, plantas aromáticas e abraçar as Samaúmas, as árvores rainhas da Amazônia.
               </p>
             </div>
           </div>
