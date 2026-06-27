@@ -254,6 +254,73 @@ export default function HomeView() {
         </div>
       </section>
 
+      {/* Selo de Elogios - 4 Pilares da Experiência */}
+      <section style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', gap: '30px' }}>
+        <div style={{ textAlign: 'center', maxWidth: '750px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <span style={{ color: 'var(--accent-acai)', fontWeight: '700', textTransform: 'uppercase', fontSize: '0.85rem', letterSpacing: '0.12em' }}>
+            MÉDIA 5.0 ESTRELAS NO GOOGLE
+          </span>
+          <h2 style={{ fontSize: '2.4rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)' }}>
+            O que nossos viajantes mais elogiam
+          </h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>
+            Com base nas nossas 491 avaliações de 5 estrelas no Google, estes são os diferenciais que tornam o nosso passeio à Ilha do Combu uma vivência transformadora:
+          </p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }} className="booking-grid">
+          
+          <div className="glass-card" style={{ padding: '24px', display: 'flex', gap: '16px', flexDirection: 'column', background: '#fff', border: '1px solid var(--border)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{ background: 'rgba(122, 28, 74, 0.08)', color: 'var(--accent-acai)', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Users size={24} />
+              </div>
+              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Conexão Real com a Comunidade</strong>
+            </div>
+            <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+              Nada de encenações. Nossos roteiros dão protagonismo real às famílias ribeirinhas. No Seu Ladi, na Dona Nena e na Dona Rosa, você terá conversas sinceras e vivenciará o cotidiano amazônico de forma autêntica.
+            </p>
+          </div>
+
+          <div className="glass-card" style={{ padding: '24px', display: 'flex', gap: '16px', flexDirection: 'column', background: '#fff', border: '1px solid var(--border)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{ background: 'rgba(11, 79, 54, 0.08)', color: 'var(--accent-light)', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Sparkles size={24} />
+              </div>
+              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Conhecimento com Alma</strong>
+            </div>
+            <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+              A condução atenciosa de Leandro e Raquel vai muito além de indicar caminhos. Aprenda sobre fauna, flora (como a imponente Samaúma) e lendas regionais em um bate-papo dinâmico, leve e inesquecível.
+            </p>
+          </div>
+
+          <div className="glass-card" style={{ padding: '24px', display: 'flex', gap: '16px', flexDirection: 'column', background: '#fff', border: '1px solid var(--border)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{ background: 'rgba(255, 184, 0, 0.08)', color: '#d99e00', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Utensils size={24} />
+              </div>
+              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Almoço Ribeirinho Lendário</strong>
+            </div>
+            <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+              A comida caseira e fresca servida pela Dona Rosa no restaurante Restô da Ilha é descrita como impecável. Saboreie os clássicos da região com tranquilidade, de frente para o rio e de pés descalços.
+            </p>
+          </div>
+
+          <div className="glass-card" style={{ padding: '24px', display: 'flex', gap: '16px', flexDirection: 'column', background: '#fff', border: '1px solid var(--border)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{ background: 'rgba(11, 79, 54, 0.08)', color: 'var(--accent-light)', padding: '10px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <CheckCircle size={24} />
+              </div>
+              <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Turismo Ético e Seguro</strong>
+            </div>
+            <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
+              Compromisso real com o fomento sustentável (remuneração justa a barqueiros e moradores) e com o seu bem-estar (lancha rápida confortável, coletes sob medida e total acessibilidade comunicacional em Libras).
+            </p>
+          </div>
+
+        </div>
+      </section>
+
       {/* O que está incluso */}
       <section style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', gap: '30px' }}>
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '10px' }}>

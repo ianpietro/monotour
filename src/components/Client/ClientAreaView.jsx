@@ -307,6 +307,7 @@ export default function ClientAreaView({ bookingId, initialSection, getBooking, 
 
       {/* Grid Menu Options */}
       <div 
+        className="booking-grid"
         style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 

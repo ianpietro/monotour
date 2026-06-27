@@ -216,6 +216,45 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
         </div>
       </div>
 
+      {/* Google Review Callout */}
+      <div 
+        className="glass-card" 
+        style={{ 
+          padding: '24px', 
+          marginBottom: '30px', 
+          textAlign: 'center',
+          background: 'linear-gradient(135deg, rgba(255, 184, 0, 0.04) 0%, rgba(122, 28, 74, 0.02) 100%)',
+          border: '1px solid rgba(255, 184, 0, 0.22)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '12px'
+        }}
+      >
+        <div style={{ fontSize: '1.5rem' }}>💚✨</div>
+        <h3 style={{ fontSize: '1.2rem', fontFamily: 'var(--font-serif)', fontStyle: 'italic', color: 'var(--text-h)', margin: 0 }}>
+          Seu coração também ficou na floresta?
+        </h3>
+        <p style={{ color: 'var(--text)', fontSize: '0.9rem', lineHeight: '1.5', maxWidth: '650px', margin: 0 }}>
+          Olá, <strong>{getFirstName(booking.clientName)}</strong>! A nossa maior alegria é compartilhar o saber tradicional e a beleza da Amazônia com você. Se a sua vivência com a comunidade do Combu foi especial, ajude a espalhar essa semente! Deixe uma avaliação carinhosa no Google para apoiar o turismo comunitário e as famílias ribeirinhas que nos receberam.
+        </p>
+        <a 
+          href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48b94ef11749b:0xf13788c0350d2bb0,1" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn btn-gold"
+          style={{ 
+            marginTop: '8px', 
+            padding: '12px 28px', 
+            fontSize: '0.92rem', 
+            boxShadow: '0 4px 10px rgba(255, 184, 0, 0.3)',
+            textDecoration: 'none'
+          }}
+        >
+          Escrever Avaliação no Google 🌟
+        </a>
+      </div>
+
       {/* Grid Content */}
       <div style={{ display: 'grid', gridTemplateColumns: '1.8fr 1.2fr', gap: '30px' }} className="booking-grid">
         

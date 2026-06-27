@@ -422,3 +422,69 @@ a:hover {
   gap: 20px;
 }
 
+/* ==========================================
+   Responsive Mobile Optimization (max-width: 768px)
+   ========================================== */
+@media (max-width: 768px) {
+  /* 1. Page & Layout Containers */
+  .container {
+    padding-inline: 16px !important;
+  }
+  
+  .main-content {
+    padding-block: 20px !important;
+  }
+
+  /* 2. Grid & Stack Adaptations */
+  /* booking-grid: force multi-column grid layouts to stack vertically on mobile */
+  .booking-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* form-row-mobile: force form rows to stack vertically on mobile */
+  .form-row-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* 3. Header & Navigation (Logo on top, links wrap nicely below it) */
+  .header-container {
+    flex-direction: column !important;
+    height: auto !important;
+    padding-block: 12px !important;
+    gap: 12px !important;
+  }
+
+  .nav-links {
+    width: 100% !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .nav-link {
+    font-size: 0.82rem !important;
+    padding: 6px 10px !important;
+  }
+
+  /* 4. Font Sizes & Spacing */
+  h1 {
+    font-size: 1.85rem !important;
+  }
+  
+  h2 {
+    font-size: 1.45rem !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  /* 5. Card Paddings (reduce internal padding on mobile to save screen width) */
+  .glass-card {
+    padding: 20px 16px !important;
+  }
+}
+
