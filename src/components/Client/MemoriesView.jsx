@@ -255,6 +255,120 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
         </a>
       </div>
 
+      {/* Pós-Venda: Lembranças e Novos Roteiros */}
+      <div 
+        className="glass-card" 
+        style={{ 
+          padding: '24px 30px', 
+          marginBottom: '30px', 
+          textAlign: 'left',
+          background: 'linear-gradient(135deg, rgba(122, 28, 74, 0.03) 0%, rgba(198, 148, 62, 0.02) 100%)',
+          border: '1px solid var(--border)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '24px'
+        }}
+      >
+        <div>
+          <span style={{ color: 'var(--accent-acai)', fontWeight: '700', textTransform: 'uppercase', fontSize: '0.82rem', letterSpacing: '0.12em', display: 'block', marginBottom: '6px' }}>
+            QUER CONTINUAR NAVEGANDO?
+          </span>
+          <h3 style={{ fontSize: '1.45rem', fontFamily: 'var(--font-serif)', color: 'var(--text-h)', margin: 0 }}>
+            Lembranças locais & Próximas aventuras
+          </h3>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '6px', margin: 0 }}>
+            Se você quer levar um pedacinho da floresta para casa ou planejar o próximo dia a bordo com a gente, confira o que preparamos:
+          </p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }} className="booking-grid">
+          
+          {/* Lembranças */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            <h4 style={{ fontSize: '1.05rem', fontWeight: '700', color: 'var(--text-h)', borderBottom: '1px solid var(--border)', paddingBottom: '6px', margin: 0 }}>
+              🎒 Lembranças da Nossa Terra
+            </h4>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
+                <div>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Chocolate Artesanal (Dona Nena)</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Cacau orgânico feito na Ilha do Combu</span>
+                </div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 25</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
+                <div>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Camiseta Samaúma</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Algodão sustentável com estampa local</span>
+                </div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 69</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
+                <div>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Garrafa Térmica Monotour</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Para evitar plásticos de uso único no rio</span>
+                </div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 45</span>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Outros Roteiros */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            <h4 style={{ fontSize: '1.05rem', fontWeight: '700', color: 'var(--text-h)', borderBottom: '1px solid var(--border)', paddingBottom: '6px', margin: 0 }}>
+              🛶 Outras Vivências com a Gente
+            </h4>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
+                <div>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Pôr do Sol no Rio Guamá</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Entardecer no rio com queijo do Marajó</span>
+                </div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 120/p</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
+                <div>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Centro Histórico a Pé</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Caminhada guiada e visita ao Ver-o-Peso</span>
+                </div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 80/p</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
+                <div>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Expedição Cotijuba</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Praias de água doce e ruínas históricas</span>
+                </div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 160/p</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '4px' }}>
+          <a 
+            href={`https://wa.me/5591992753444?text=Olá! Estava vendo minhas recordações do passeio e gostaria de encomendar alguns produtos / saber mais sobre as outras vivências.`}
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-gold"
+            style={{ padding: '12px 24px', fontSize: '0.88rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+          >
+            Encomendar ou Agendar no WhatsApp 💬
+          </a>
+        </div>
+
+      </div>
+
       {/* Grid Content */}
       <div style={{ display: 'grid', gridTemplateColumns: '1.8fr 1.2fr', gap: '30px' }} className="booking-grid">
         
