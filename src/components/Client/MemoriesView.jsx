@@ -55,11 +55,14 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
     window.location.hash = `#/memorias/${searchId.toLowerCase().trim()}`;
   };
 
-  const handleAddPhoto = (e) => {
-    e.preventDefault();
-    if (!newPhotoUrl) return;
-    setGallery(prev => [...prev, newPhotoUrl]);
-    setNewPhotoUrl('');
+  const handleFileUpload = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      setGallery(prev => [...prev, event.target.result]);
+    };
+    reader.readAsDataURL(file);
   };
 
   const handleAddMockPhoto = () => {
@@ -309,10 +312,26 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
                 <div>
-                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Garrafa Térmica Monotour</span>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Para evitar plásticos de uso único no rio</span>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Ímã de Geladeira Monotour</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Madeira reaproveitada e pintada à mão</span>
                 </div>
-                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 45</span>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 15</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
+                <div>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Óleo de Andiroba Puro (AME)</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Remédio natural feito pelas extrativistas</span>
+                </div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 35</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', border: '1px solid var(--border)', borderRadius: '6px', background: '#fff' }}>
+                <div>
+                  <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', color: 'var(--text-h)' }}>Sacola de Juta Ecológica</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Eco-bag feita por artesãs ribeirinhas</span>
+                </div>
+                <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--accent-light)' }}>R$ 30</span>
               </div>
 
             </div>
@@ -506,17 +525,30 @@ export default function MemoriesView({ bookingId, getBooking, faunaFlora, partne
               ))}
             </div>
 
-            <form onSubmit={handleAddPhoto} style={{ display: 'flex', gap: '8px', marginBottom: '10px' }}>
-              <input 
-                type="url" 
-                className="form-control" 
-                style={{ padding: '6px 10px', fontSize: '0.8rem' }}
-                placeholder="Cole URL da foto..."
-                value={newPhotoUrl}
-                onChange={(e) => setNewPhotoUrl(e.target.value)}
-              />
-              <button type="submit" className="btn btn-primary" style={{ padding: '6px 12px', fontSize: '0.8rem' }}>Adicionar</button>
-            </form>
+            <div style={{ marginBottom: '10px' }}>
+              <label 
+                className="btn btn-primary" 
+                style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  gap: '8px', 
+                  padding: '10px 16px', 
+                  fontSize: '0.88rem', 
+                  cursor: 'pointer',
+                  width: '100%',
+                  textAlign: 'center'
+                }}
+              >
+                <span>Anexar Foto do Dispositivo 📸</span>
+                <input 
+                  type="file" 
+                  accept="image/*" 
+                  onChange={handleFileUpload} 
+                  style={{ display: 'none' }} 
+                />
+              </label>
+            </div>
             <button 
               type="button" 
               onClick={handleAddMockPhoto}
