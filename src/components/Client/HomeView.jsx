@@ -915,14 +915,59 @@ export default function HomeView() {
           <p style={{ fontSize: '1.1rem', color: '#E5E7EB', maxWidth: '600px', lineHeight: '1.6', margin: '0 0 10px 0' }}>
             Reserve com antecedência para garantir vaga na lancha confortável com Leandro e Raquel. Roteiro de dia completo com almoço típico e taxas inclusas.
           </p>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
-            <span style={{ fontSize: '1.5rem', color: 'var(--accent-gold)', fontWeight: '800' }}>
-              A partir de R$ 350,00 por pessoa
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', width: '100%' }}>
+            <span style={{ fontSize: '1.4rem', color: 'var(--accent-gold)', fontWeight: '800' }}>
+              Valores Individuais por Tamanho de Grupo
             </span>
-            <span style={{ fontSize: '0.82rem', color: '#D1D5DB', fontStyle: 'italic', maxWidth: '600px', margin: '0 auto 4px auto' }}>
-              *Para grupos menores (de 1 a 4 pessoas), soma-se o custo fixo do transporte fluvial (lancha de R$ 300,00) dividido entre o grupo. A partir de 5 pessoas, aplica-se a tarifa base padrão de R$ 350,00/pessoa.
-            </span>
-            <span style={{ fontSize: '0.8rem', color: '#B3B9C2', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            
+            {/* Tiered Pricing Grid Table */}
+            <div style={{ 
+              width: '100%', 
+              maxWidth: '450px', 
+              margin: '10px auto', 
+              borderRadius: '8px', 
+              overflow: 'hidden', 
+              border: '1px solid rgba(255, 255, 255, 0.2)',
+              fontSize: '0.9rem',
+              color: '#FFFFFF'
+            }}>
+              <div style={{ 
+                display: 'grid', 
+                gridTemplateColumns: '1.2fr 1fr', 
+                background: 'rgba(255, 255, 255, 0.12)', 
+                fontWeight: '700', 
+                padding: '10px 16px', 
+                borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
+                color: 'var(--accent-gold)',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
+              }}>
+                <span>Pessoas</span>
+                <span style={{ textAlign: 'right' }}>Valor Individual</span>
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', padding: '10px 16px', borderBottom: '1px solid rgba(255, 255, 255, 0.1)', background: 'rgba(255, 255, 255, 0.03)' }}>
+                <span>2 pessoas</span>
+                <span style={{ textAlign: 'right', fontWeight: '700' }}>R$ 505,00</span>
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', padding: '10px 16px', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
+                <span>3 pessoas</span>
+                <span style={{ textAlign: 'right', fontWeight: '700' }}>R$ 405,00</span>
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', padding: '10px 16px', borderBottom: '1px solid rgba(255, 255, 255, 0.1)', background: 'rgba(255, 255, 255, 0.03)' }}>
+                <span>4 pessoas</span>
+                <span style={{ textAlign: 'right', fontWeight: '700' }}>R$ 355,00</span>
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', padding: '10px 16px', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
+                <span>5 a 6 pessoas</span>
+                <span style={{ textAlign: 'right', fontWeight: '700' }}>R$ 335,00</span>
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', padding: '10px 16px', background: 'rgba(255, 255, 255, 0.03)' }}>
+                <span>7 a 15 pessoas</span>
+                <span style={{ textAlign: 'right', fontWeight: '700' }}>R$ 315,00</span>
+              </div>
+            </div>
+
+            <span style={{ fontSize: '0.8rem', color: '#D1D5DB', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '4px' }}>
               Pix • Cartão de Crédito • PayPal • Mercado Pago
             </span>
           </div>

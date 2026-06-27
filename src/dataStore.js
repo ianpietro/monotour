@@ -144,10 +144,10 @@ const INITIAL_BOOKINGS = [
     paymentMethod: "paypal",
     status: "pago",
     tourId: "combu",
-    totalPaid: 1950.00,
-    subtotal: 1350.00,
+    totalPaid: 1584.18,
+    subtotal: 1215.00,
     interpreterFee: 300.00,
-    gatewayFee: 78.00,
+    gatewayFee: 69.18,
     originCity: "Paris",
     originState: "Île-de-France",
     originCountry: "França",
@@ -170,8 +170,8 @@ const INITIAL_BOOKINGS = [
     paymentMethod: "pix",
     status: "pago",
     tourId: "combu",
-    totalPaid: 1750.00,
-    subtotal: 1750.00,
+    totalPaid: 1675.00,
+    subtotal: 1675.00,
     interpreterFee: 0.00,
     gatewayFee: 0.00,
     originCity: "São Paulo",
@@ -196,10 +196,10 @@ const INITIAL_BOOKINGS = [
     paymentMethod: "link",
     status: "pago",
     tourId: "combu",
-    totalPaid: 2122.50,
-    subtotal: 1750.00,
+    totalPaid: 2044.63,
+    subtotal: 1675.00,
     interpreterFee: 300.00,
-    gatewayFee: 72.50,
+    gatewayFee: 69.63,
     originCity: "Washington D.C.",
     originState: "DC",
     originCountry: "Estados Unidos",
@@ -230,8 +230,8 @@ const INITIAL_BOOKINGS = [
     paymentMethod: "pix",
     status: "pago",
     tourId: "combu",
-    totalPaid: 2100.00,
-    subtotal: 2100.00,
+    totalPaid: 2010.00,
+    subtotal: 2010.00,
     interpreterFee: 0.00,
     gatewayFee: 0.00,
     originCity: "São Paulo",
@@ -265,10 +265,10 @@ const INITIAL_BOOKINGS = [
     paymentMethod: "paypal",
     status: "pago",
     tourId: "combu",
-    totalPaid: 2143.25,
-    subtotal: 1750.00,
+    totalPaid: 2064.88,
+    subtotal: 1675.00,
     interpreterFee: 300.00,
-    gatewayFee: 93.25,
+    gatewayFee: 89.88,
     originCity: "Paris",
     originState: "IDF",
     originCountry: "França",
@@ -299,8 +299,8 @@ const INITIAL_BOOKINGS = [
     paymentMethod: "pix",
     status: "pago",
     tourId: "combu",
-    totalPaid: 1700.00,
-    subtotal: 1700.00,
+    totalPaid: 1720.00,
+    subtotal: 1420.00,
     interpreterFee: 300.00,
     gatewayFee: 0.00,
     fichaCompleted: false
@@ -412,13 +412,21 @@ export const PAYMENT_METHODS = {
   inter: { name: "Inter (Transf. Internacional)", feePercent: 1.5, flatFee: 5.00 }
 };
 
-export const calculateTotal = (passengers, language, paymentMethod) => {
-  const basePrice = getBasePrice();
-  const interpreterRate = getInterpreterRate();
+export const getIndividualPrice = (passengers) => {
+  const baseOffset = getBasePrice() - 350;
+  let price = 315;
+  if (passengers <= 2) price = 505;
+  else if (passengers === 3) price = 405;
+  else if (passengers === 4) price = 355;
+  else if (passengers <= 6) price = 335;
   
-  const transportCost = passengers < 5 ? 300 : 0;
-  const baseSubtotal = passengers * basePrice;
-  const subtotal = baseSubtotal + transportCost;
+  return price + baseOffset;
+};
+
+export const calculateTotal = (passengers, language, paymentMethod) => {
+  const individualPrice = getIndividualPrice(passengers);
+  const interpreterRate = getInterpreterRate();
+  const subtotal = passengers * individualPrice;
   
   // Interpreter fee if language is not Portuguese
   const interpreterFee = (language && language !== "portugues") ? interpreterRate : 0;
@@ -432,8 +440,7 @@ export const calculateTotal = (passengers, language, paymentMethod) => {
   const totalPaid = parseFloat((rawTotal + gatewayFee).toFixed(2));
   
   return {
-    baseSubtotal,
-    transportCost,
+    individualPrice,
     subtotal,
     interpreterFee,
     gatewayFee: parseFloat(gatewayFee.toFixed(2)),
