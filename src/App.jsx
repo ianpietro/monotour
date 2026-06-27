@@ -3,6 +3,7 @@ import { loadState, saveState } from './dataStore';
 import HomeView from './components/Client/HomeView';
 import BookingForm from './components/Client/BookingForm';
 import ClientAreaView from './components/Client/ClientAreaView';
+import SobreView from './components/Client/SobreView';
 import Dashboard from './components/Admin/Dashboard';
 import BriefingView from './components/Admin/BriefingView';
 import GuiaView from './components/Admin/GuiaView';
@@ -86,6 +87,8 @@ export default function App() {
     switch (currentRoute.view) {
       case 'home':
         return <HomeView />;
+      case 'sobre':
+        return <SobreView />;
       case 'reserva':
         return <BookingForm onBookingSuccess={handleAddBooking} />;
       case 'cliente':
@@ -146,13 +149,13 @@ export default function App() {
       {/* Premium Header */}
       <header className="header">
         <div className="container header-container">
-          <div className="logo">
+          <a href="#/sobre" className="logo" style={{ textDecoration: 'none' }}>
             <Compass className="logo-monkey" size={28} />
             <div>
               <span className="logo-monkey">MONO</span>
               <span className="logo-tour">TOUR</span>
             </div>
-          </div>
+          </a>
 
           <nav className="nav-links">
             <a 
