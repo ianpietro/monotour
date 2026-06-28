@@ -28,6 +28,28 @@ export default function ClientAreaView({ bookingId, initialSection, getBooking, 
     return fullName.trim().split(/\s+/)[0];
   };
 
+  // Helper to get gendered welcome message
+  const getGenderedWelcome = (name) => {
+    if (!name) return 'Bem-vindo(a)';
+    const nameLower = name.trim().toLowerCase();
+    
+    // Lista de nomes femininos conhecidos (exceções que não terminam com a)
+    const femaleOverrides = ['raquel', 'ruth', 'iris', 'beatriz', 'alice', 'sophie', 'marie', 'carla', 'dona', 'nena', 'rosa', 'marcelle', 'mariana', 'juliana'];
+    
+    // Lista de nomes masculinos conhecidos (exceções que terminam com a ou e)
+    const maleNames = ['felipe', 'pierre', 'giovanni', 'leandro', 'rodrigo', 'pedro', 'carlos', 'lucas', 'john', 'robert', 'billy', 'jean', 'alexandre', 'andre', 'andré'];
+    
+    if (maleNames.includes(nameLower)) {
+      return 'Bem-vindo';
+    }
+    
+    if (nameLower.endsWith('a') || femaleOverrides.includes(nameLower)) {
+      return 'Bem-vinda';
+    }
+    
+    return 'Bem-vindo';
+  };
+
   // Sync booking when URL param changes or on mount
   useEffect(() => {
     if (bookingId) {
@@ -245,7 +267,7 @@ export default function ClientAreaView({ bookingId, initialSection, getBooking, 
             Olá, {firstName}!
           </h1>
           <p style={{ color: 'var(--text-muted)', margin: '4px 0 0' }}>
-            Bem-vindo ao seu portal de viagem Monotur.
+            {getGenderedWelcome(firstName)} à sua Área do Viajante Monotour.
           </p>
         </div>
 

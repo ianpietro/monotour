@@ -290,7 +290,7 @@ export default function HomeView() {
               <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>A prosa do Leandro e da Raquel</strong>
             </div>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              O Leandro e a Raquel não são aqueles guias tradicionais que só mostram caminhos. Eles conhecem cada canto, planta e história do lugar. O papo é leve, carinhoso e você vai sair daqui entendendo os segredos de árvores gigantes como a Samaúma.
+              O Leandro e a Raquel não são aqueles guias tradicionais que só mostram caminhos. Eles conhecem cada canto, planta e história do lugar. O papo é leve, carinhoso e você vai sair daqui entendendo os segredos da floresta Amazônica.
             </p>
           </div>
 
@@ -314,7 +314,7 @@ export default function HomeView() {
               <strong style={{ fontSize: '1.1rem', color: 'var(--text-h)', fontWeight: '650' }}>Cuidado, respeito e lancha boa</strong>
             </div>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-              Valorizamos de verdade quem trabalha conosco: todo ribeirinho e barqueiro recebe de forma justa. Nossas lanchas são rápidas, seguras e muito confortáveis, com coletes adequados para todos e guiamento completo em Libras.
+              Valorizamos de verdade quem trabalha conosco: todo ribeirinho e barqueiro recebe de forma justa. Nossas lanchas são rápidas, seguras e muito confortáveis, com coletes adequados para todos e com respeito aos limites de velocidade necessários para a navegabilidade na região de ilhas.
             </p>
           </div>
 
@@ -343,7 +343,7 @@ export default function HomeView() {
             <div>
               <strong style={{ fontSize: '1.05rem', color: 'var(--text-h)', display: 'block', marginBottom: '4px' }}>Transporte Fluvial</strong>
               <span style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.5', display: 'block' }}>
-                Navegação segura em lancha confortável de ida e volta, partindo de Belém.
+                Navegação segura em lancha confortável, exclusiva para nosso grupo e à disposição durante todo o trajeto, partindo de Belém.
               </span>
             </div>
           </div>
@@ -552,7 +552,7 @@ export default function HomeView() {
                 O Cacau da Dona Nena
               </h4>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: 0 }}>
-                Caminhamos pelas trilhas de cacau selvagem e aprendemos como as sementes são fermentadas e secas no sol. Dona Nena (conhecida nacionalmente) compartilha os segredos de seu chocolate 100% orgânico e rústico, mantendo a floresta de pé e produtiva.
+                Conhecemos o empreendimento pioneiro na ilha do combu, comandado por Dona Nena. A parada na fábrica de chocolate é o momento ideal para visitar o pequeno museu, degustar chocolates e doces e fazer compras.
               </p>
             </div>
           </div>
