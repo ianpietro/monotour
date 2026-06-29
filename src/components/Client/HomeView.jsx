@@ -145,23 +145,37 @@ export default function HomeView() {
           </p>
           
           {/* Google Trust Rating Badge */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', background: 'rgba(0,0,0,0.35)', padding: '10px 20px', borderRadius: 'var(--radius-sm)', border: '1px solid rgba(255,255,255,0.12)', margin: '8px 0' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <strong style={{ fontSize: '1.05rem', color: '#fff' }}>Monotour Belém</strong>
-              <span style={{ fontSize: '1.05rem', fontWeight: '800', color: 'var(--accent-gold)' }}>5,0</span>
-              <div style={{ display: 'flex', color: 'var(--accent-gold)', gap: '1px' }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" style={{ border: 'none' }} />)}
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center', 
+            gap: '6px', 
+            background: 'rgba(0, 0, 0, 0.4)', 
+            padding: '12px 24px', 
+            borderRadius: '8px', 
+            border: '1px solid rgba(255, 255, 255, 0.15)', 
+            margin: '10px 0' 
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.95rem' }}>
+              <strong style={{ color: '#ffffff', fontWeight: '700' }}>Monotour Belém</strong>
+              <span style={{ fontWeight: '800', color: '#ffb800' }}>5,0</span>
+              <div style={{ display: 'flex', color: '#ffb800', gap: '1px' }}>
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={13} fill="#ffb800" stroke="none" />
+                ))}
               </div>
               <a 
-                href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48b94ef11749b:0xf13788c0350d2bb0,1" 
+                href="https://www.google.com/search?q=Monotour+Bel%C3%A9m#lrd=0x92a48f538c5670bf:0xb2011b8420db3937,1,,,," 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                style={{ fontSize: '0.85rem', color: '#93c5fd', fontWeight: '600', textDecoration: 'underline' }}
+                style={{ color: '#60a5fa', fontWeight: '600', textDecoration: 'underline' }}
               >
                 491 avaliações no Google
               </a>
             </div>
-            <span style={{ fontSize: '0.75rem', color: '#e5e7eb' }}>Agência de turismo em Belém, Pará</span>
+            <span style={{ fontSize: '0.72rem', color: '#d1d5db', letterSpacing: '0.02em' }}>
+              Agência de turismo em Belém, Pará
+            </span>
           </div>
 
           <div style={{ display: 'flex', gap: '16px', marginTop: '24px', flexWrap: 'wrap', justifyContent: 'center' }}>
